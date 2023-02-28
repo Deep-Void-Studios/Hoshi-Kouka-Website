@@ -1,14 +1,26 @@
 <!DOCTYPE html>
+
 <head>
 	<title>
 		Hoshi Kouka
 	</title>
-	<body>
-		<h1>
-			Under Construction...
-		</h1>
-		<p>
-			Please come back later.
-		</p>
-	</body>
+	<link rel="icon" href="i/favicon.ico">
+	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+
+<body>
+	<script>
+		$.get("navigation.html", function (data) {
+			$("#nav-placeholder").replaceWith(data);
+		});
+	</script>
+	<img src="i/logo.webp" height="64">
+	<h1>
+		Under Construction...
+	</h1>
+	<p>
+		Please come back later.
+	</p>
+	<img src="i/Copyleft.svg" width="32">
+</body>
